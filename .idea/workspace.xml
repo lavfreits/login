@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837a798c-d6fd-459c-a110-89f96a3adc42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/login_android.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/images/apple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/images/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/controllers/bloc/login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/controllers/bloc/login_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/controllers/bloc/login_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/pages/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/button_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/forgot_password.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/loading_indicator_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/login_form.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/password_field.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/square_tile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/title_and_subtitle_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/widgets/username_field.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="837a798c-d6fd-459c-a110-89f96a3adc42" name="Changes" comment="feat: finish ui">
+      <change afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +56,9 @@
       <recent name="C:\Users\llima\StudioProjects\login\lib\images" />
       <recent name="C:\Users\llima\StudioProjects\login" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\llima\StudioProjects\login\android\app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -99,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1693936675883</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: finish ui">
+      <created>1695674696764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695674696764</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -106,5 +90,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: finish ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: finish ui" />
   </component>
 </project>
