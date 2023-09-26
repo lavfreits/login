@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:email_validator/email_validator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
@@ -16,17 +17,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         emit(LoginValidationState(message: message));
       } else {
         emit(LoginLoadingState());
-        try {
-          if (event.email == 'example@gmail.com' &&
-              event.password == 'pass123') {
-            await Future.delayed(const Duration(seconds: 3));
-            emit(LoginSuccessState());
-          } else {
-            emit(LoginErrorState('Invalid credentials'));
-          }
-        } catch (error) {
-          emit(LoginErrorState(error.toString()));
-        }
+        await FirebaseAuth.instance.signInWithEmailAndPassword(
+            email: event.email!, password: event.password!);
+        emit(LoginSuccessState());
       }
     });
   }

@@ -1,18 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:login/presentation/controllers/bloc/login_bloc.dart';
+import 'package:login/presentation/pages/auth_page.dart';
 import 'package:login/presentation/pages/home_page.dart';
 import 'package:login/presentation/pages/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'firebase_options.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlataform,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
+  await FirebaseAuth.instance.useAuthEmulator('localhost', 8080);
   runApp(const MyApp());
 }
 
@@ -21,9 +25,15 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
-        return const LoginPage();
+        return const AuthPage();
       },
       routes: <RouteBase>[
+        GoRoute(
+          path: 'home',
+          builder: (BuildContext context, GoRouterState state) {
+            return const LoginPage();
+          },
+        ),
         GoRoute(
           path: 'home',
           builder: (BuildContext context, GoRouterState state) {
