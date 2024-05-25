@@ -13,8 +13,10 @@ class LoginForm extends StatelessWidget {
     required this.onTap,
     required this.usernameController,
     required this.passwordController,
-    required this.forgotPasswordPressed,
+    required this.forgotPasswordPressed, 
+    required this.register,
   });
+  final void Function()? register;
 
   final void Function()? onTap;
   final void Function()? forgotPasswordPressed;
@@ -88,11 +90,14 @@ class LoginForm extends StatelessWidget {
                       style: TextStyle(color: Colors.grey[700]),
                     ),
                     const SizedBox(width: 4),
-                    const Text(
-                      'Register now',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: register,
+                      child: const Text(
+                        'Register now',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],

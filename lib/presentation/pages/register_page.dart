@@ -6,24 +6,24 @@ import '../controllers/bloc/login_bloc.dart';
 import '../widgets/loading_indicator_widget.dart';
 import '../widgets/login_form.dart';
 
-class LoginPage extends StatefulWidget {
+class RegisterPage extends StatefulWidget {
   final Function register;
-  const LoginPage({super.key, required this.register});
+  const RegisterPage({super.key, required this.register});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
-  late LoginBloc loginBloc;
+class _RegisterPageState extends State<RegisterPage> {
+  // late LoginBloc loginBloc;
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  @override
-  void initState() {
-    loginBloc = BlocProvider.of<LoginBloc>(context);
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   loginBloc = BlocProvider.of<LoginBloc>(context);
+  //   super.initState();
+  // }
 
   @override
   void dispose() {
