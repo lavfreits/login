@@ -17,6 +17,7 @@ Este projeto é um aplicativo Flutter que integra Autenticação Firebase para l
 - Login de usuário com e-mail e senha
 - Registro de usuário com e-mail e senha
 - Integração do Login com Google
+- Logout do usuário
 - Gerenciamento do estado de autenticação do Firebase
 - Interface simples e intuitiva
 
@@ -25,25 +26,26 @@ Este projeto é um aplicativo Flutter que integra Autenticação Firebase para l
 
 A classe `LoginPage` fornece a UI para o login do usuário.
 
-<img src="loging_in_page.png" alt="Products List page" width="360" height=790">
+<img src="loging_in_page.png" alt="Página de Login" width="360" height="790">
 
 
 ## Página de Registro
 
-A classe RegisterPage fornece a UI para o registro do usuário.
+A classe `RegisterPage` fornece a UI para o registro do usuário.
 
-<img src="registering_page.png" alt="Products List page" width="360" height=790">
+<img src="registering_page.png" alt="Página de Registro" width="360" height="790">
+
+*minor error should be: let's create AN account for you
 
 
 ## Página Inicial
 
-A classe HomePage exibe o e-mail do usuário se estiver logado e fornece um botão de saída.
+A classe `HomePage` exibe o e-mail do usuário se estiver logado e fornece um botão de saída.
 
-<img src="home_page.png" alt="Products List page" width="360" height=790">
+<img src="home_page.png" alt="Página Inicial" width="360" height="790">
 
 
-
-## Pré-requisitos
+## Pré-Requisitos
 
 Antes de começar, certifique-se de que atendeu aos seguintes requisitos:
 
