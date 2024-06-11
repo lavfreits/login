@@ -8,8 +8,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        implementation("com.google.firebase:firebase-analytics-ktx")
-        implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     }
 }
 

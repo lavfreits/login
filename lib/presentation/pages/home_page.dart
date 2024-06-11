@@ -2,15 +2,20 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+
+  final user = FirebaseAuth.instance.currentUser;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Center(
-            child: Text('Home page'),
+          Center(
+            child: Text(
+              'Home page, logged in as: ${user?.email ?? ""}',
+            ),
           ),
           ElevatedButton(
             child: const Text('Sign Out'),
